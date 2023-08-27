@@ -20,6 +20,10 @@ ul {
   max-width: 480px;
   padding: 0 15px;
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) .container {
+  min-width: 768px;
+  padding: 0 0px;
+}
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -33,7 +37,6 @@ body {
   color: #212121;
   font-weight: 400;
   letter-spacing: 0.03em;
-  width: 1600px;
 }
 header {
   border-bottom: 1px solid #ececec;
@@ -74,6 +77,9 @@ a:focus {
   font-family: "Raleway", sans-serif;
   font-size: 26px;
   letter-spacing: 0.03em;
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
 }
 .contact-navi {
   font-weight: 500;
@@ -133,17 +139,19 @@ button {
   width: 200px;
 }
 .h3-lorem {
+  display: flex;
   font-weight: 700;
   font-size: 14px;
   line-height: 0.875;
+  justify-content: center;
 }
 .p-lorem {
+  display: flex;
   font-size: 14px;
   line-height: 24px;
   color: var(--title-color);
-  width: 270px;
-  height: 75px;
   letter-spacing: 0.03em;
+  justify-content: center;
 }
 .h2-todo {
   font-weight: 700;
@@ -208,17 +216,19 @@ header li {
 .background-h1 {
   text-align: center;
   background-color: #2f303a;
-  padding: 200px 452px 200px 452px;
+  padding: 118px 0;
+  max-width: 480px;
   margin: 0 auto;
-  background-image: url("../images/start.jpg");
+  background-size: cover;
+  background-image: url("../images/start-s1.jpg");
 }
 .head-text {
   font-weight: 900;
-  font-size: 44px;
-  line-height: 60px;
-  letter-spacing: 0.06em;
-  margin: 0;
-  width: 696px;
+  font-size: 26px;
+  line-height: 42px;
+  letter-spacing: 1.56px;
+  margin: 0px;
+  max-width: 320px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -232,13 +242,12 @@ header li {
   gap: 30px;
   padding: 0;
   flex-direction: column;
-  align-items: center;
 }
 .lorem-li {
   margin-bottom: 0;
 }
 .center-align {
-  display: flex;
+  display: none;
   flex-direction: column;
   align-items: center;
   text-align: center;
@@ -294,7 +303,7 @@ header li {
   height: auto;
 }
 .contact-footer {
-  padding: 60px 0px 60px 15px;
+  padding: 60px 0px 15px;
 }
 .contact-footer :nth-child(1) {
   padding-bottom: 20px;
@@ -302,8 +311,10 @@ header li {
 .transparent-text {
   font-size: 14px;
   line-height: 1.7;
-  padding-bottom: 9px;
   color: #ffffff99;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .map-text {
   color: #ffffff;
@@ -385,7 +396,6 @@ main {
 }
 .lore-icons {
   border-radius: 4px;
-  width: 270px;
   height: 120px;
   background: #f5f4fa;
   display: flex;
@@ -409,9 +419,10 @@ main {
 .logo-list {
   display: flex;
   gap: 30px;
-  justify-content: center;
-  flex-direction: column;
+  justify-content: space-between;
+  flex-direction: row;
   align-items: center;
+  flex-wrap: wrap;
 }
 .logo:hover {
   cursor: pointer;
@@ -432,10 +443,14 @@ main {
   font-size: 14px;
   font-weight: 700;
   line-height: 16px;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.42px;
   text-align: left;
   margin: 0;
   color: var(--text-color);
+}
+.footer-social h3 {
+  display: flex;
+  justify-content: center;
 }
 .footer-social li {
   display: inline-flex;
@@ -500,7 +515,6 @@ main {
   border-radius: 4px;
   top: 50%;
   left: 50%;
-  width: 528px;
   transform: translate(-50%, -50%);
   min-height: 581px;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -571,8 +585,6 @@ nav ul li.current-site::after {
   position: absolute;
   top: 10px;
   right: 10px;
-  width: 30px;
-  height: 30px;
   background-color: #fff;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
@@ -683,16 +695,20 @@ nav ul li.current-site::after {
   font-size: 14px;
 }
 .footer-inscription {
+  display: flex;
   text-transform: uppercase;
   line-height: 1.1428em;
   font-size: 14px;
   color: var(--text-color);
+  justify-content: center;
+  padding-top: 60px;
 }
 .input-send {
   margin-top: 20px;
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 20px;
+  padding-bottom: 60px;
 }
 .newsletter-input {
   width: 358px;
@@ -761,10 +777,14 @@ nav ul li.current-site::after {
   height: 40px;
   width: 40px;
 }
+.icon-menu:hover {
+  fill: var(--niebo-color);
+}
 .menu {
   list-style: none;
   display: flex;
   flex-direction: column;
+  margin: 0px;
   padding-top: 48px;
 }
 .menu li {
