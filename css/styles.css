@@ -16,8 +16,9 @@ ul {
   list-style-type: none;
 }
 .container {
-  width: 1200px;
-  margin: 0 auto;
+  min-width: 320px;
+  max-width: 480px;
+  padding: 0 15px;
 }
 .section {
   padding-top: 94px;
@@ -230,6 +231,8 @@ header li {
   display: flex;
   gap: 30px;
   padding: 0;
+  flex-direction: column;
+  align-items: center;
 }
 .lorem-li {
   margin-bottom: 0;
@@ -244,6 +247,7 @@ header li {
   display: flex;
   justify-content: center;
   gap: 30px;
+  flex-wrap: wrap;
 }
 .image-item {
   position: relative;
@@ -273,10 +277,10 @@ header li {
 }
 .team-list {
   display: flex;
-  justify-content: center;
   gap: 30px;
-  list-style: none;
   padding: 0;
+  flex-direction: column;
+  align-items: center;
 }
 .team-item {
   flex-basis: calc(25% - 30px);
@@ -406,6 +410,8 @@ main {
   display: flex;
   gap: 30px;
   justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 .logo:hover {
   cursor: pointer;
@@ -418,6 +424,8 @@ main {
 }
 .foter {
   display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .foter h3 {
   font-family: Roboto;
@@ -428,10 +436,6 @@ main {
   text-align: left;
   margin: 0;
   color: var(--text-color);
-}
-.footer-social {
-  margin-left: 70px;
-  margin-top: 72px;
 }
 .footer-social li {
   display: inline-flex;
@@ -678,9 +682,6 @@ nav ul li.current-site::after {
 .text-regul {
   font-size: 14px;
 }
-.footer-newsletter {
-  margin: 72px 0 0 78px;
-}
 .footer-inscription {
   text-transform: uppercase;
   line-height: 1.1428em;
@@ -690,6 +691,7 @@ nav ul li.current-site::after {
 .input-send {
   margin-top: 20px;
   display: flex;
+  flex-direction: column;
   gap: 12px;
 }
 .newsletter-input {
