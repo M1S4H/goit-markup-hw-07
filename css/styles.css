@@ -845,3 +845,44 @@ nav ul li.current-site::after {
     gap: 144px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .container {
+    min-width: 1200px;
+    max-width: 1600px;
+  }
+  .background-h1 {
+    background-image: url("../images/start-l1.jpg");
+    max-width: 1200px;
+  }
+  .team-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .lorem-four-columns {
+    flex-direction: row;
+  }
+  .foter {
+    flex-direction: row;
+    padding-left: 215px;
+  }
+  .transparent-text {
+    justify-content: normal;
+  }
+  .tablet-footer {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    gap: 70px;
+    padding-right: 78px;
+  }
+  .footer-social h3 {
+    justify-content: flex-start;
+  }
+  .footer-inscription {
+    justify-content: flex-start;
+  }
+  .input-send {
+    margin-top: 0px;
+    flex-direction: row;
+  }
+}
