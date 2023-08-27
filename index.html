@@ -16,18 +16,45 @@
               <a href="./index.html"
                 ><span class="logo-color">Web</span>Studio</a
               >
+            <button class="nav-button generic-button js-open-menu">
+              <svg class="icon-menu">
+                    <use href="images/icons.svg#icon-menu" width="40" hight="40"></use>
+                  </svg></button>
+	<div class="mobile-menu js-menu-container">
+		<button class="menu-button generic-button js-close-menu"><svg class="btn-close" width="40" height="40">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg></button>
+		<menu class="menu">
+			<li><a href="./index.html">Agencja</a></li>
+			<li><a href="./portfolio.html">Portfolio</a></li>
+			<li><a href="#">Kontakt</a></li>
+		</menu>
+    <menu class="kontakt-menu menu">
+      <li><a class="phone" href="tel:+48111111111"
+                >+48 111 111 111</a</li>
+      <li><a class="email" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a</li>
+    </menu>
+
+    
+    <menu class="menu-social">
+    <li>Instagram</li>
+    <li>Twitter</li>
+    <li>Facebook</li>
+    <li>Linkedln</li></menu>
+	</div>
             </li>
-            <li class="agencja-pad current-site">
+            <li class="agencja-pad current-site large-menu">
               <a href="./index.html" class="links">Agencja</a>
             </li>
-            <li class="portfolio-kontakt-pad">
+            <li class="portfolio-kontakt-pad large-menu">
               <a href="./portfolio.html" class="links">Portfolio</a>
             </li>
-            <li class="contact-kontakt-pad">
+            <li class="contact-kontakt-pad large-menu">
               <a href="./contact.html" class="links">Kontakt</a>
             </li>
           </ul>
-          <ul class="nav-manu-second">
+          <ul class="nav-manu-second large-menu">
             <li class="mail-pad">
               <svg class="icon-email">
                 <use href="images/icons.svg#icon-envelope"></use>
@@ -459,5 +486,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
