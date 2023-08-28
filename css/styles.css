@@ -16,9 +16,9 @@ ul {
   list-style-type: none;
 }
 .container {
-  min-width: 320px;
   max-width: 480px;
-  padding: 0 0px;
+  padding: 0 15px;
+  margin: 0 auto;
 }
 .section {
   padding-top: 94px;
@@ -415,7 +415,7 @@ main {
   border: 1px solid #2196f3;
 }
 .logo-client {
-  width: 170px;
+  width: 160px;
   height: 92px;
 }
 .foter {
@@ -696,7 +696,7 @@ nav ul li.current-site::after {
   padding-bottom: 60px;
 }
 .newsletter-input {
-  width: 358px;
+  width: 100%;
   height: 50px;
   background-color: inherit;
   border: 1px solid #ffffff4d;
@@ -723,14 +723,18 @@ nav ul li.current-site::after {
 
 .mobile-menu {
   position: fixed;
-  inset: 0;
-  translate: -100% 0 0;
-  transition: translate 400ms;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 999;
+  transform: translateX(100%);
+  transition: transform 250ms ease-in-out;
   background-color: var(--text-color);
 }
 
 .mobile-menu.is-open {
-  translate: none;
+  transform: translateX(0);
 }
 
 .menu-button {
@@ -819,15 +823,25 @@ nav ul li.current-site::after {
 
 @media screen and (min-width: 767px) and (max-width: 1199px) {
   .container {
-    min-width: 767px;
-    padding: 0 0px;
+    max-width: 768px;
   }
   .background-h1 {
     background-image: url("../images/start-m1.jpg");
     max-width: 767px;
   }
+  .lorem-four-columns {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
   .logo-client {
     flex-basis: calc(30% - 10px);
+    width: 226px;
+  }
+  .lorem-li {
+    width: 354px;
+  }
+  .logo {
+    width: 226px;
   }
   .team-list {
     flex-direction: row;
@@ -884,5 +898,8 @@ nav ul li.current-site::after {
   .input-send {
     margin-top: 0px;
     flex-direction: row;
+  }
+  .center-align {
+    display: block;
   }
 }
