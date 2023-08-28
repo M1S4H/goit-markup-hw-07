@@ -810,6 +810,7 @@ nav ul li.current-site::after {
   letter-spacing: 0.36px;
   padding-top: 64px;
 }
+
 @media (width > 768px) {
   .mobile-menu,
   .nav-button {
