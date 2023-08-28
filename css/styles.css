@@ -210,7 +210,6 @@ header li {
   text-align: center;
   background-color: #2f303a;
   padding: 118px 0;
-  max-width: 480px;
   margin: 0 auto;
   background-size: cover;
   background-image: url("../images/start-s1.jpg");
@@ -828,7 +827,6 @@ nav ul li.current-site::after {
   }
   .background-h1 {
     background-image: url("../images/start-m1.jpg");
-    max-width: 767px;
   }
   .lorem-four-columns {
     flex-direction: row;
@@ -867,7 +865,6 @@ nav ul li.current-site::after {
   }
   .background-h1 {
     background-image: url("../images/start-l1.jpg");
-    max-width: 1200px;
   }
   .team-list {
     flex-direction: row;
@@ -902,5 +899,14 @@ nav ul li.current-site::after {
   }
   .center-align {
     display: block;
+  }
+}
+
+@media (-webkit-min-device-pixel-ratio: 2),
+  (min--moz-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .background-h1 {
+    background-image: url("../images/start-s2.jpg");
   }
 }
