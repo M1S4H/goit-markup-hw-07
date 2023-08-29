@@ -500,11 +500,9 @@ main {
   box-shadow: 0px 1px 3px #0000001f, 0px 1px 1px #00000024,
     0px 2px 1px #00000033;
   border-radius: 4px;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  width: 90vw;
+  min-width: 310px;
+  max-width: 450px;
 }
 .image-text {
   font-size: 17px;
@@ -552,6 +550,10 @@ nav ul li.current-site::after {
   transform: scale(1);
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 .submit-button {
   font-style: normal;
@@ -860,7 +862,7 @@ nav ul li.current-site::after {
     gap: 144px;
   }
   .modal {
-    width: 60vw;
+    max-width: 450px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -911,5 +913,14 @@ nav ul li.current-site::after {
   }
   .center-align {
     display: block;
+  }
+  .modal {
+    max-width: 528px;
+  }
+  .nav-manu-second {
+    gap: 30px;
+  }
+  .navigation {
+    max-width: 1170px;
   }
 }
