@@ -64,7 +64,7 @@ a:focus {
   font-weight: 500;
   font-size: 14px;
   display: flex;
-  align-items: baseline;
+  align-items: center;
   justify-content: space-between;
   padding: 26px 15px 26px 15px;
   letter-spacing: 0.02em;
