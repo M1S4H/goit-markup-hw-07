@@ -205,6 +205,7 @@ header li {
 }
 .background-dark {
   background-color: #2f303a;
+  padding: 60px 0;
 }
 .background-h1 {
   text-align: center;
@@ -285,9 +286,6 @@ header li {
   width: 100%;
   height: auto;
 }
-.contact-footer {
-  padding: 60px 0px 0px;
-}
 .transparent-text {
   font-size: 14px;
   line-height: 1.7;
@@ -295,6 +293,9 @@ header li {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.text-footer-margin {
+  margin-bottom: 20px;
 }
 .map-text {
   color: #ffffff;
@@ -432,7 +433,6 @@ main {
 .footer-social {
   display: table;
   margin: 0 auto;
-  padding-top: 60px;
 }
 .footer-social h3 {
   display: flex;
@@ -690,14 +690,13 @@ nav ul li.current-site::after {
   font-size: 14px;
   color: var(--text-color);
   justify-content: center;
-  padding-top: 60px;
 }
 .input-send {
   margin-top: 20px;
   display: flex;
   flex-direction: column;
   gap: 20px;
-  padding-bottom: 60px;
+  margin-bottom: 20px;
 }
 .newsletter-input {
   width: 100%;
@@ -897,7 +896,7 @@ nav ul li.current-site::after {
   .foter {
     display: flex;
     flex-direction: row;
-    padding-left: 215px;
+    justify-content: center;
   }
   .transparent-text {
     justify-content: normal;
@@ -921,6 +920,7 @@ nav ul li.current-site::after {
   }
   .input-send {
     margin-top: 0px;
+    margin-bottom: 0px;
     flex-direction: row;
   }
   .center-align {
@@ -941,5 +941,12 @@ nav ul li.current-site::after {
   }
   .logo-footer {
     padding-bottom: 20px;
+  }
+  .newsletter-input {
+    width: 358px;
+  }
+  .email-input {
+    display: flex;
+    gap: 12px;
   }
 }
