@@ -76,6 +76,7 @@ a:focus {
   display: flex;
   align-items: baseline;
   justify-content: center;
+  padding-bottom: 20px;
 }
 .contact-navi {
   font-weight: 500;
@@ -115,7 +116,6 @@ button {
   font-size: 16px;
   background-color: #f5f4fa;
   font-weight: 500;
-  line-height: 1.625;
   border: none;
   border-radius: 4px;
   padding: 6px 22px;
@@ -273,7 +273,6 @@ header li {
   gap: 30px;
   padding: 0;
   flex-direction: column;
-  align-items: center;
 }
 .team-item {
   flex-basis: calc(25% - 30px);
@@ -287,10 +286,7 @@ header li {
   height: auto;
 }
 .contact-footer {
-  padding: 60px 0px 15px;
-}
-.contact-footer :nth-child(1) {
-  padding-bottom: 20px;
+  padding: 60px 0px 0px;
 }
 .transparent-text {
   font-size: 14px;
@@ -303,9 +299,12 @@ header li {
 .map-text {
   color: #ffffff;
   font-size: 14px;
-  padding-bottom: 9px;
   margin: 0 auto;
   display: table;
+}
+.text-footer {
+  padding-top: 8px;
+  padding-bottom: 8px;
 }
 .footer-adress {
   margin-top: 60px;
@@ -397,7 +396,7 @@ main {
 }
 .logo {
   fill: #afb1b8;
-  width: 170px;
+  width: 210px;
   height: 92px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
@@ -416,7 +415,7 @@ main {
   border: 1px solid #2196f3;
 }
 .logo-client {
-  width: 160px;
+  width: 210px;
   height: 92px;
 }
 
@@ -433,6 +432,7 @@ main {
 .footer-social {
   display: table;
   margin: 0 auto;
+  padding-top: 60px;
 }
 .footer-social h3 {
   display: flex;
@@ -501,9 +501,10 @@ main {
     0px 2px 1px #00000033;
   border-radius: 4px;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  min-width: 310px;
-  max-width: 450px;
+  width: 450px;
+  height: 609px;
 }
+
 .image-text {
   font-size: 17px;
   line-height: 28px;
@@ -591,12 +592,12 @@ nav ul li.current-site::after {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 40px;
-  padding-bottom: 12px;
+  padding: 40px 40px 12px 40px;
   color: var(--dark-color);
   font-size: 20px;
   line-height: 23px;
   font-weight: 700;
+  text-align: center;
 }
 .label-list {
   display: flex;
@@ -680,7 +681,7 @@ nav ul li.current-site::after {
   background: var(--niebo-color);
 }
 .text-regul {
-  font-size: 14px;
+  font-size: 12px;
 }
 .footer-inscription {
   display: flex;
@@ -870,6 +871,10 @@ nav ul li.current-site::after {
     min-width: 1200px;
     max-width: 1600px;
   }
+  .webstudio-style {
+    justify-content: normal;
+    padding-bottom: 0px;
+  }
   .background-h1 {
     background-image: url("../images/start-l1.jpg");
   }
@@ -879,6 +884,9 @@ nav ul li.current-site::after {
   }
   .lorem-four-columns {
     flex-direction: row;
+  }
+  .logo {
+    width: 170px;
   }
   .logo-list {
     justify-content: center;
@@ -901,6 +909,10 @@ nav ul li.current-site::after {
     gap: 70px;
     padding-right: 78px;
   }
+  .text-footer {
+    padding-bottom: 9px;
+    padding-top: 9px;
+  }
   .footer-social h3 {
     justify-content: flex-start;
   }
@@ -915,12 +927,19 @@ nav ul li.current-site::after {
     display: block;
   }
   .modal {
-    max-width: 528px;
+    width: 528px;
+    height: 581px;
+  }
+  .text-regul {
+    font-size: 14px;
   }
   .nav-manu-second {
     gap: 30px;
   }
   .navigation {
     max-width: 1170px;
+  }
+  .logo-footer {
+    padding-bottom: 20px;
   }
 }
